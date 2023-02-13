@@ -1,24 +1,10 @@
-# README
+Ovo je mini projekat webapp-a razvijen pomoću Ruby on Rails-a.
+Frontend je dosta siromašan zato što mi je fokus bio isključivo na
+funkcionalnosti i upoznavanju sa specifičnostima ovog framework-a.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Kratak opis:
+Ukoliko korisnik nije ulogovan moguće je samo prikazivanje podataka
+o zaposlenima iz baze podataka.
+Nakon kreiranja profila i logovanja pojavljuju se opcije za izmenu informacija
+o zaposlenima, brisanje zaposlenih, kao i stranica za upravljanje profilom.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
