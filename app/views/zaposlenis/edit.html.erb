@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+  <h1>Izmena podataka zaposlenog</h1>
+  <br><br>
+  <%= render "form", zaposleni: @zaposleni %>
+
+  <br>
+
+  <div>
+    <%= link_to "Prikazi zaposlenog", @zaposleni, class:"btn btn-secondary" %> 
+    <%= link_to "Nazad na prikaz", zaposlenis_path, class:"btn btn-secondary" %>
+  </div>
+<% else %>
+  <p>Morate biti prijavljeni da biste izmenili podatke o korisniku.</p>
+
+<% end %>
+

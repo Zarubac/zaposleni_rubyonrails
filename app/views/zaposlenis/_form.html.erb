@@ -1,0 +1,43 @@
+<%= form_with(model: zaposleni) do |form| %>
+  <% if zaposleni.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(zaposleni.errors.count, "error") %> prohibited this zaposleni from being saved:</h2>
+
+      <ul>
+        <% zaposleni.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :ime, style: "display: block" %>
+    <%= form.text_field :ime, class:"form-control" %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :prezime, style: "display: block" %>
+    <%= form.text_field :prezime, class:"form-control"  %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :zanimanje, style: "display: block" %>
+    <%= form.text_field :zanimanje, class:"form-control"  %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, class:"form-control"  %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :telefon, style: "display: block" %>
+    <%= form.text_field :telefon, class:"form-control"   %>
+  </div>
+  <br>
+  <br>
+  <div>
+    <%= form.submit class:"btn btn-secondary"%>
+  </div>
+<% end %>

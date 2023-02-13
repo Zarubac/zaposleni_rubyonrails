@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+  <h1>Dodavanje zaposlenog u bazu</h1>
+  <br><br>
+  <%= render "form", zaposleni: @zaposleni %>
+  <br>
+  <div>
+    <%= link_to "Prikaz", zaposlenis_path, class: "btn btn-secondary" %>
+  </div>
+<% else %>
+  <p>Morate biti prijavljeni da biste dodali zaposlenog.</p>
+
+<% end %>
+

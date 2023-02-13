@@ -1,0 +1,2 @@
+class Zaposleni < ApplicationRecord
+end
